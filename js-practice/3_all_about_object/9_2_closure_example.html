@@ -1,0 +1,14 @@
+<script>
+  function getNumber() {
+    var number = 5;
+
+    function innerGetNunmber() {
+      return number;
+    }
+
+    return innerGetNumber;
+  }
+
+  var runner = getNumber();
+  console.log(runner());
+</script>

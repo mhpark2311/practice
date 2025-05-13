@@ -1,3 +1,1 @@
-# practice
-
-commit test
+# My coding practice
