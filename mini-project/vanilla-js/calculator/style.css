@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0px;
+}
+input {
+  width: 200px;
+  margin: 5px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  gap: 5px;
+}
+section {
+  border: 1px solid black;
+  padding: 10px;
+}
