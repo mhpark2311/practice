@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input_box" type="text" placeholder="아무거나 입력하세요" />
+    <button id="input_button">입력</button>
+    <p>출력 :<span id="output"></span></p>
+    <script>
+      const inputBox = document.querySelector('#input_box');
+      const inputBtn = document.querySelector('#input_button');
+      const output = document.querySelector('#output');
+
+      inputBtn.addEventListener('click', function () {
+        output.textContent = inputBox.value;
+      });
+    </script>
+  </body>
+</html>

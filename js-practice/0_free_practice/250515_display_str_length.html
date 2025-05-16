@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input_box" placeholder="글자 수를 세어보겠습니다." />
+    <p>글자 수 :<span id="str_length"></span></p>
+    <script>
+      inputBox = document.querySelector('#input_box');
+      strLength = document.querySelector('#str_length');
+
+      inputBox.addEventListener('input', () => {
+        strLength.textContent = inputBox.value.length;
+      });
+    </script>
+  </body>
+</html>
