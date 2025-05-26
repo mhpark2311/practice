@@ -12,12 +12,7 @@ buttons[2].addEventListener('click', () => {
 });
 buttons[3].addEventListener('click', () => {
   let lastValue = display.value.split('')[display.value.split('').length - 1];
-  if (
-    lastValue !== '+' &&
-    lastValue !== '-' &&
-    lastValue !== '*' &&
-    lastValue !== '/'
-  ) {
+  if (lastValue !== '+' && lastValue !== '-' && lastValue !== '*' && lastValue !== '/') {
     display.value += '+';
   }
 });
@@ -33,12 +28,7 @@ buttons[6].addEventListener('click', () => {
 });
 buttons[7].addEventListener('click', () => {
   let lastValue = display.value.split('')[display.value.split('').length - 1];
-  if (
-    lastValue !== '+' &&
-    lastValue !== '-' &&
-    lastValue !== '*' &&
-    lastValue !== '/'
-  ) {
+  if (lastValue !== '+' && lastValue !== '-' && lastValue !== '*' && lastValue !== '/') {
     display.value += '-';
   }
 });
@@ -54,12 +44,7 @@ buttons[10].addEventListener('click', () => {
 });
 buttons[11].addEventListener('click', () => {
   let lastValue = display.value.split('')[display.value.split('').length - 1];
-  if (
-    lastValue !== '+' &&
-    lastValue !== '-' &&
-    lastValue !== '*' &&
-    lastValue !== '/'
-  ) {
+  if (lastValue !== '+' && lastValue !== '-' && lastValue !== '*' && lastValue !== '/') {
     display.value += '*';
   }
 });
@@ -80,12 +65,7 @@ buttons[14].addEventListener('click', () => {
 });
 buttons[15].addEventListener('click', () => {
   let lastValue = display.value.split('')[display.value.split('').length - 1];
-  if (
-    lastValue !== '+' &&
-    lastValue !== '-' &&
-    lastValue !== '*' &&
-    lastValue !== '/'
-  ) {
+  if (lastValue !== '+' && lastValue !== '-' && lastValue !== '*' && lastValue !== '/') {
     display.value += '/';
   }
 });

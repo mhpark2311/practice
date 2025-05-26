@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+section.display,
+section.buttons {
+  border: 1px solid black;
+  padding: 8px;
+  max-width: 200px;
+  width: 100%;
+}
+section.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 30px;
+}
+
+section.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+}
+
+button {
+  padding: 10px;
+  margin: 2px;
+  font-size: 20px;
+}
+input {
+  width: 180px;
+}
