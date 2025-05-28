@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+fieldset {
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+input {
+  max-width: 300px;
+  width: 80%;
+  padding: 3px;
+}
+li {
+  margin-top: 10px;
+}
+li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+ul {
+  padding-left: 20px;
+}
+button {
+  margin-left: 8px;
+  padding: 2px;
+}
+legend {
+  text-align: center;
+  font-size: 25px;
+}
+section#todoForm {
+  text-align: center;
+}
