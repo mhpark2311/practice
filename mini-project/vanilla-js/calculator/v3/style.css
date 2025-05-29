@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+section.display,
+section.buttons {
+  border: 1px solid black;
+  padding: 8px;
+  max-width: 200px;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+section.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+section.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+}
+button {
+  padding: 8px;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+input {
+  font-size: 1.2rem;
+  width: 100%;
+}
