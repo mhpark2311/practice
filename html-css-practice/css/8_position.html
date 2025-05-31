@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      main,
+      section,
+      article,
+      div {
+        border: 1px solid black;
+        padding: 20px;
+      }
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: yellow;
+      }
+      section {
+        background-color: violet;
+        position: relative;
+      }
+      article {
+        background-color: cyan;
+      }
+      div {
+        background-color: white;
+      }
+      /* position: static이 기본값 */
+      /* relative : top, bottom, left, right 속성으로 상대적인 위치에 배치 가능 */
+      div.relative {
+        position: relative;
+        right: 20px;
+        top: -150px;
+        /* z-index는 숫자가 클수룩 앞에 배치 */
+        z-index: 8;
+      }
+      /* absolute는 문서의 일반적인 흐름을 따르지 않게 한다. */
+      /* position: static 속성을 가지고 있지 않은 조상을 기준으로 움직인다 */
+      /* 조상 중에 relative, absolute, fixed, sticky인 태그가 없다면 html이 기준이 되고
+      결과적으로 브라우저 창 왼쪽 위에 붙는다 */
+      div.absolute {
+        position: absolute;
+        background-color: grey;
+        top: 0px;
+        left: 0px;
+        /* z-index는 숫자가 클수룩 앞에 배치 */
+        z-index: 7;
+      }
+      /* fixed는 absolute와 마찬가지로 문서의 일반적을 흐름을 따르지 않게 하며
+      화면의 뷰포트를 기준으로 한 위치에 배치된다. 즉 스크롤 해도 움직이지 않는 고정된 자리를 가지게 된다 */
+      div.fixed {
+        position: fixed;
+        background-color: blue;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 50%;
+      }
+      /* sticky는 static처럼 문서의 일반적인 흐름에 따라 가다가, 
+      스크롤 위치가 임계점에 이르면 fixed처럼 화면에 고정된다. */
+      div.sticky {
+        position: sticky;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      main
+      <section>
+        section
+        <article>
+          article
+          <div>static</div>
+          <div class="relative">relative</div>
+          <div class="absolute">absolute</div>
+          <div class="fixed">fixed</div>
+          <div class="sticky">sticky</div>
+          <div style="height: 1500px"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

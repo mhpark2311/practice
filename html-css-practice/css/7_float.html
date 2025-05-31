@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      .container {
+        width: 800px;
+        border: 1px solid grey;
+      }
+
+      img {
+        width: 300px;
+      }
+      .float-left {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .float-right {
+        float: right;
+      }
+      p {
+        border: 1px solid blue;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- float속성으로 이미지를 뜨게 하여 p태그의 옆에 문단을 표시 -->
+      <img class="float-left" src="../assets/images/nature.jpg" alt="" />
+      <p>자연 환경(自然環境, 영어: natural environment)은 지구의 모든 생물과 무생물을 아우르는 상태를 일컫는 말이다.</p>
+      <p>환경오염은 인간의 활동으로 인해 환경의 고유 기능이 상실되는 것을 의미한다.</p>
+      <!-- <img class="float-right" src="../assets/images/nature.jpg" alt="" /> -->
+
+      <!-- clear속성을 사용하면 float의 영향에서 벗어나 이미지 밑에 p태그 표시됨 -->
+      <p class="clear">환경오염은 인간의 활동으로 인해 환경의 고유 기능이 상실되는 것을 의미한다.</p>
+    </div>
+  </body>
+</html>

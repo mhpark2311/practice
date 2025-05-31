@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: #ff00005d;
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url('../assets/images/flower.jpg');
+        width: 200px;
+        height: 400px;
+        border: 1px solid blue;
+        /* background-repeat: no-repeat; */
+        background-repeat: repeat;
+        background-position: top left;
+        display: inline-block;
+        color: yellow;
+        overflow-y: scroll;
+      }
+      /* div 내부 스크롤을 내려도 배경 이미지가 고정되서 움직이지 않음 */
+      /* 화면 전체 스크롤을 내리면 배경 이미지도 같이 움직임 */
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      /* div 내부 스크롤을 내려도 배경 이미지가 고정되서 움직이지 않음 */
+      /* 화면 전체 스크롤을 내려도 배경 이미지가 고정되서 움직이지 않음 */
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      /* div 내부 스크롤을 내리면 배경 이미지도 같이 움직임  */
+      /* 화면 전체 스크롤을 내리면 배경 이미지도 같이 움직임 */
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 600px;
+        height: 300px;
+        background-image: url('../assets/images/football.jpg');
+        background-repeat: no-repeat;
+        /* background-size가 contain이면 이미지 전체를 표시 */
+        /* background-size: contain; */
+        /* background-size가 cover면 요소 전체에 이미지가 꽉차도록 표시 */
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to top right, red 50%, blue 80%, yellow);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(circle at 10% 50%, white, yellow, red, blue);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+
+    <div class="image attachment-scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur ab, accusantium quidem eligendi beatae tenetur exercitationem ipsa laborum. Illum ratione alias ipsa beatae nulla,
+      dolore reprehenderit voluptates culpa quidem. Officiis aliquid inventore quibusdam dolore, aperiam iure voluptatum maxime praesentium temporibus rem optio unde magnam pariatur omnis nisi. Autem
+      dicta exercitationem facilis dolor deleniti veniam adipisci maxime ut fugit labore! Vitae tempora autem iste enim nihil consectetur, accusamus facere cupiditate, nam deleniti culpa? Nam illo
+      maxime ratione quaerat eaque sit? Ullam est corrupti nesciunt illum molestias libero non mollitia provident. Maiores perspiciatis deserunt, architecto id adipisci nulla ex! Laudantium dolor
+      deserunt inventore velit provident, nisi distinctio! Eius, impedit temporibus consequatur nostrum unde nesciunt ab itaque, quos culpa expedita ex ullam. Rerum nesciunt dolorum adipisci est aut
+      veritatis laudantium totam nemo. Obcaecati aspernatur magnam recusandae blanditiis adipisci quas, eos, aliquid quos ex inventore voluptatibus expedita quidem distinctio, velit voluptates
+      consectetur. Neque. Debitis voluptatibus excepturi quia molestiae voluptatem? Eaque pariatur minima architecto tenetur at? Sit, commodi saepe. Vitae quae cupiditate architecto et ratione, iusto
+      at culpa sit magni ab temporibus nesciunt provident. Rem odit temporibus ducimus adipisci minus nihil amet libero velit, eaque consequatur ullam molestias corporis, eligendi obcaecati, ipsam
+      facilis assumenda eius blanditiis. Possimus ea placeat, praesentium consequatur perspiciatis voluptates illum! Dolorem, at, doloremque consequatur perspiciatis eligendi laborum doloribus,
+      delectus ea corrupti fuga aliquam similique possimus impedit rerum iure reiciendis earum. Accusamus animi eveniet deleniti reiciendis voluptatum neque! Nisi, laborum esse.
+    </div>
+    <div class="image attachment-fixed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur ab, accusantium quidem eligendi beatae tenetur exercitationem ipsa laborum. Illum ratione alias ipsa beatae nulla,
+      dolore reprehenderit voluptates culpa quidem. Officiis aliquid inventore quibusdam dolore, aperiam iure voluptatum maxime praesentium temporibus rem optio unde magnam pariatur omnis nisi. Autem
+      dicta exercitationem facilis dolor deleniti veniam adipisci maxime ut fugit labore! Vitae tempora autem iste enim nihil consectetur, accusamus facere cupiditate, nam deleniti culpa? Nam illo
+      maxime ratione quaerat eaque sit? Ullam est corrupti nesciunt illum molestias libero non mollitia provident. Maiores perspiciatis deserunt, architecto id adipisci nulla ex! Laudantium dolor
+      deserunt inventore velit provident, nisi distinctio! Eius, impedit temporibus consequatur nostrum unde nesciunt ab itaque, quos culpa expedita ex ullam. Rerum nesciunt dolorum adipisci est aut
+      veritatis laudantium totam nemo. Obcaecati aspernatur magnam recusandae blanditiis adipisci quas, eos, aliquid quos ex inventore voluptatibus expedita quidem distinctio, velit voluptates
+      consectetur. Neque. Debitis voluptatibus excepturi quia molestiae voluptatem? Eaque pariatur minima architecto tenetur at? Sit, commodi saepe. Vitae quae cupiditate architecto et ratione, iusto
+      at culpa sit magni ab temporibus nesciunt provident. Rem odit temporibus ducimus adipisci minus nihil amet libero velit, eaque consequatur ullam molestias corporis, eligendi obcaecati, ipsam
+      facilis assumenda eius blanditiis. Possimus ea placeat, praesentium consequatur perspiciatis voluptates illum! Dolorem, at, doloremque consequatur perspiciatis eligendi laborum doloribus,
+      delectus ea corrupti fuga aliquam similique possimus impedit rerum iure reiciendis earum. Accusamus animi eveniet deleniti reiciendis voluptatum neque! Nisi, laborum esse.
+    </div>
+    <div class="image attachment-local">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur ab, accusantium quidem eligendi beatae tenetur exercitationem ipsa laborum. Illum ratione alias ipsa beatae nulla,
+      dolore reprehenderit voluptates culpa quidem. Officiis aliquid inventore quibusdam dolore, aperiam iure voluptatum maxime praesentium temporibus rem optio unde magnam pariatur omnis nisi. Autem
+      dicta exercitationem facilis dolor deleniti veniam adipisci maxime ut fugit labore! Vitae tempora autem iste enim nihil consectetur, accusamus facere cupiditate, nam deleniti culpa? Nam illo
+      maxime ratione quaerat eaque sit? Ullam est corrupti nesciunt illum molestias libero non mollitia provident. Maiores perspiciatis deserunt, architecto id adipisci nulla ex! Laudantium dolor
+      deserunt inventore velit provident, nisi distinctio! Eius, impedit temporibus consequatur nostrum unde nesciunt ab itaque, quos culpa expedita ex ullam. Rerum nesciunt dolorum adipisci est aut
+      veritatis laudantium totam nemo. Obcaecati aspernatur magnam recusandae blanditiis adipisci quas, eos, aliquid quos ex inventore voluptatibus expedita quidem distinctio, velit voluptates
+      consectetur. Neque. Debitis voluptatibus excepturi quia molestiae voluptatem? Eaque pariatur minima architecto tenetur at? Sit, commodi saepe. Vitae quae cupiditate architecto et ratione, iusto
+      at culpa sit magni ab temporibus nesciunt provident. Rem odit temporibus ducimus adipisci minus nihil amet libero velit, eaque consequatur ullam molestias corporis, eligendi obcaecati, ipsam
+      facilis assumenda eius blanditiis. Possimus ea placeat, praesentium consequatur perspiciatis voluptates illum! Dolorem, at, doloremque consequatur perspiciatis eligendi laborum doloribus,
+      delectus ea corrupti fuga aliquam similique possimus impedit rerum iure reiciendis earum. Accusamus animi eveniet deleniti reiciendis voluptatum neque! Nisi, laborum esse.
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
