@@ -11,6 +11,12 @@ HTML, CSS, JS 기초 연습용
 
 ## 업데이트 이력
 
+### v4 (2025-05-31)
+
+- 버튼 크기 유동화 (반응형 대응)
+- 상태값을 도입하여 UX 개선
+- 입력 로직 개선
+
 ### v3 (2025-05-29)
 
 - 렌더링 함수 분리
@@ -28,10 +34,10 @@ HTML, CSS, JS 기초 연습용
 
 ### style.css
 
-- [ ] 버튼 크기 유동화 (반응형 대응)
+- [x] 버튼 크기 유동화 (반응형 대응)
 
 ### script.js
 
 - [x] `forEach`를 사용하여 `buttons[0]`~`buttons[15]` 반복 제거
 - [ ] `new Function` 함수 제거 및 자체 파서(괄호는 미지원) 구현
-- [ ] 상태값을 도입하여 UX 개선 (lastInputType, isEvaluated)
+- [x] 상태값을 도입하여 UX 개선 (lastInputType, isEvaluated)
