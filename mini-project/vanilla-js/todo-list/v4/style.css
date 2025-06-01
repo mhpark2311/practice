@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 1rem=10px */
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: none;
+  max-width: 35rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+legend {
+  text-align: center;
+  font-size: 3rem;
+}
+#filter {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+#todoForm {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+#todoInput,
+#addBtn {
+  padding: 0.5rem;
+}
+#todoInput {
+  width: 70%;
+}
+#todoList {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+}
+li > button {
+  padding: 0.3rem;
+  margin: 0.3rem;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+#all:hover,
+#complete:hover,
+#incomplete:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+#filter span.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
