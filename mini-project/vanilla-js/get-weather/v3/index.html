@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Get Weather v3</title>
+  </head>
+  <body>
+    <header>오늘의 날씨 v3</header>
+    <main>
+      <section id="displayAndIconSection">
+        <p id="loading">날씨 정보를 불러오는 중...</p>
+        <section id="display" class="hidden">
+          <ul>
+            <li>도시명 : <span id="city"></span></li>
+            <li>현재 기온 : <span id="temp"></span></li>
+            <li>습도 : <span id="humidity"></span></li>
+            <li>날씨 : <span id="description"></span></li>
+            <li>풍속 : <span id="wind"></span></li>
+          </ul>
+        </section>
+        <section id="icon"><img id="weatherIcon" class="hidden" alt="날씨 아이콘" /></section>
+      </section>
+    </main>
+    <footer>
+      <section id="searchAndbtnSection"><input type="text" id="citySearch" placeholder="도시명을 검색하세요" /><button type="button" id="searchBtn">검색</button></section>
+      <section id="searchHistorySection">
+        최근 검색 이력
+        <ul id="searchHistory"></ul>
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

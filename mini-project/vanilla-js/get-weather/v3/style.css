@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 1rem=10px; */
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  width: 100%;
+}
+footer {
+  max-width: 40rem;
+  width: 100%;
+}
+header,
+section#displayAndIconSection,
+footer {
+  padding: 1.5rem;
+  border-radius: 2rem;
+  max-width: 40rem;
+  width: 100%;
+}
+header {
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.1);
+  text-align: center;
+}
+section#displayAndIconSection {
+  font-size: 1.5rem;
+  background-color: rgba(0, 255, 0, 0.1);
+  min-height: 18rem;
+  line-height: 3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 255, 0.1);
+  text-align: center;
+  gap: 3rem;
+  min-height: 18rem;
+}
+section#searchAndbtnSection {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+}
+section#searchHistorySection {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+section#display > ul {
+  list-style: none;
+}
+input#citySearch {
+  width: 80%;
+}
+input#citySearch,
+button#searchBtn {
+  height: 3rem;
+  padding: 0.3rem;
+}
+.hidden {
+  display: none;
+}
+section#display {
+  flex: 2;
+  padding-left: 1rem;
+}
+section#icon {
+  flex: 1;
+}
+p#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ul#searchHistory {
+  list-style: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1.5rem;
+  }
+  input#citySearch,
+  button#searchBtn {
+    width: 100%;
+  }
+  img#weatherIcon {
+    max-width: 100%;
+    height: auto;
+  }
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  section#searchAndbtnSection {
+    flex-direction: column;
+  }
+}
