@@ -5,7 +5,8 @@ Vanilla JS로 간단한 SPA (Single Page Application) 작성 실습
 
 ## 프로젝트 구조
 
-````📦spa-userboard
+```
+📦spa-userboard
 ┣ 📂pages // 화면별 컴포넌트 정의
 ┃ ┣ 📜Home.js // 메인화면
 ┃ ┣ 📜NotFound.js // 404 에러 대응
@@ -15,7 +16,8 @@ Vanilla JS로 간단한 SPA (Single Page Application) 작성 실습
 ┣ 📜index.html // html 진입점
 ┣ 📜readme.md // 이 파일
 ┣ 📜router.js // 해시 기반 라우터
-┗ 📜state.js // 유저 목록 상태 관리```
+┗ 📜state.js // 유저 목록 상태 관리
+```
 
 ## 프로젝트 목적
 
@@ -41,4 +43,3 @@ Vanilla JS로 간단한 SPA (Single Page Application) 작성 실습
   - 상태가 바뀌면 자동으로 `render()`가 트리거되도록 구조 개선
   - `location.hash` 등 수동 라우팅에 의존하지 않는 구조
   - React의 `useState → setState → 자동 리렌더링`을 재현
-````
