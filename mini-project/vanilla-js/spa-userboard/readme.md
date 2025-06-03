@@ -1,6 +1,6 @@
 # UserBoard
 
-Vanilla JS로 간단한 SPA (Single Page Application) 작성 실습
+Vanilla JS로 간단한 SPA (Single Page Application) 작성 실습  
 게시판 서비스를 운용 중이라 가정하고 유저 등록 기능 구현
 
 ## 프로젝트 구조
