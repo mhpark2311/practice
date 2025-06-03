@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Item</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .flex-container {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+      }
+      .flex-item {
+        color: white;
+        width: 60px;
+        height: 60px;
+        background-color: purple;
+        text-align: center;
+        border: 1px solid yellow;
+      }
+      .item1 {
+        /* flex-grow: 2;
+        flex-shrink: 2; */
+        /* order: 4; */
+        /* flex-basis: 160px; */
+        flex: 3 1 auto;
+        align-self: flex-end;
+      }
+      .item2 {
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+        /* order: 3; */
+        /* flex-basis: 30%; */
+        flex: 1 1 auto;
+        align-self: center;
+      }
+      .item3 {
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+        /* order: 2; */
+        /* flex-basis: 30vw; */
+        flex: 1 1 auto;
+      }
+      .item4 {
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+        /* order: 1; */
+        flex: 1 1 auto;
+      }
+      .item5 {
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+        /* order: 0; */
+        flex: 1 1 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item item1">1</div>
+      <div class="flex-item item2">2</div>
+      <div class="flex-item item3">3</div>
+      <div class="flex-item item4">4</div>
+      <div class="flex-item item5">5</div>
+    </div>
+  </body>
+</html>
