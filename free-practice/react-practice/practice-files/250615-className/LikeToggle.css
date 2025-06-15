@@ -1,0 +1,7 @@
+.liked {
+  color: red;
+  font-weight: bold;
+}
+.unliked {
+  color: gray;
+}
