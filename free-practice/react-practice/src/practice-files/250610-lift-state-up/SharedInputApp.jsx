@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import InputA from './inputA';
-import InputB from './inputB';
+import InputA from './InputA_temp';
+import InputB from './InputB_temp';
 
-function LiftStateUpSyncInputApp() {
+function SharedInputApp() {
   const [text, setText] = useState('');
 
   const handleChange = (e) => {
@@ -19,4 +19,4 @@ function LiftStateUpSyncInputApp() {
   );
 }
 
-export default LiftStateUpSyncInputApp;
+export default SharedInputApp;
