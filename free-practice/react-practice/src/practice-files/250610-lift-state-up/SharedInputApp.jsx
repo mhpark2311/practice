@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import InputA from './InputA_temp';
-import InputB from './InputB_temp';
+import InputA from './InputA';
+import InputB from './InputB';
 
 function SharedInputApp() {
   const [text, setText] = useState('');
