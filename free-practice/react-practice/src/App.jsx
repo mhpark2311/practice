@@ -12,9 +12,11 @@ import P250614_useStateAndProps3App from './practice-files/250614-use-state-and-
 import P250615_LikeToggle from './practice-files/250615-class-name/LikeToggle';
 import P251127_TitleBoxApp from './practice-files/251127-title-box/App';
 import P251127_ShoppingList from './practice-files/251127_component_extract';
+import P251130_MovieListCardApp from './practice-files/251130-movie-list-card/App';
+import P251130_TeamListCardApp from './practice-files/251130-team-list-card/App';
 
 function App() {
-  return <P250610_SharedInputApp />;
+  return <P251130_TeamListCardApp />;
 }
 
 export default App;
